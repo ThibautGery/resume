@@ -1,0 +1,210 @@
+\documentclass[11pt,a4paper]{moderncv}
+\moderncvtheme[blue]{classic}   
+\usepackage[english]{babel}             
+\usepackage[utf8]{inputenc}
+\usepackage[bottom = 1.2cm, top = 1.2cm, left = 1.5cm, right = 1.5cm]{geometry}
+\usepackage{xcolor}
+\firstname{Thibaut}
+\familyname{Géry}
+\title{Software Engineer}          
+\address{Sydney Australia}
+\mobile{(+61) 412 766 987}                    
+\email{thibaut.gery@gmail.com}
+\homepage{www.thibautgery.com}
+\social[linkedin]{thibautgery}
+\social[github]{thibautgery}
+\extrainfo{29/03/1990}
+
+
+\begin{document}
+\maketitle
+\vspace{-10mm}
+\section{Summary}
+Passionate developer for more than 4 years, I've developed and deployed in production web applications. Using quick customer feedback loop, I've been able to quickly iterate to create the right product. 
+\\
+I enjoy writing functional programming code following the software craftsmanship principles.
+\\
+I love to share my knowledge through blog articles or talks in local meetups.
+
+\section{Professional Experience}
+
+\cventry{2013 - now \\(4.5 years)}
+{Software Engineer}
+{Octo Technology}
+{Consulting firm}
+{(France/Australia)}
+{
+As a consultant, I've been involved in more than 10 different projects for eclectic clients. The companies range from small startups to big corporations. I had many responsibilities:
+\begin{itemize}
+\item create REST APIs using Java, \textbf{Scala} or NodeJS
+\item code web applications using \textbf{React} or AngularJS
+\item help junior to grow using \textbf{pair programming} and reviews
+\item create infrastructure using code with \textbf{Ansible}, \textbf{Cloudformation} or Chef
+\item configure continuous integration and deployment pipeline using \textbf{Jenkins}, Bamboo or CircleCI
+\item create and maintain a platform as a service to deploy API
+\item animate agile ritual like the \textbf{retrospective}
+\item verify its product hypothesis using \textbf{user testing}
+\end{itemize}
+The details of the meaningful projects done while at Octo are listed on the second page.
+}
+
+
+\cventry{2013 \\(7 months)}
+{Internship: Developer}
+{Société Générale}
+{bank}
+{France}
+{
+Helped the actuaries by optimizing their calculi on the Microsoft \textbf{HPC} distributed servers: 
+Parallelization of Excel by designing and coding three new applications on the .NET Framework:
+\begin{itemize}
+\item a \textbf{C\#} application managing Excel on the private cloud using Office API.
+\item a WCF service in C\# used as an interface of the supercomputer. 
+\item a WPF interface in C\# based on the Model-View-ViewModel pattern using the previous service.
+\end{itemize}
+}
+
+\cventry{2011 \\(6 months)}
+{Internship : Software Designer \& Helpdesk}
+{Beijaflore}
+{Consulting firm}{France}
+{Designed web applications with \textbf{C\#} (ASP.NET) in the IT department}
+
+
+\section{Education}
+\cventry{2013}
+{Engineer's degree in Computer Science}
+{Institut Supérieur d'Électronique de Paris}{France}
+{Specialized in Software Engineering}{}
+
+\cventry{2012}
+{Exchange semester in Canada}
+{Waterloo University}{Canada}{Department of computer science}{}
+
+
+\section{Skills}
+\cvcomputer{Languages}{Java, NodeJs, Scala, Python,}{Web}{API, Javascript, React}
+\cvcomputer{Database}{PostgreSQL, DynamoDB, Couchbase }{Infrastructure}{Ansible, Docker, Jenkins, Serverless}
+\cvcomputer{Craftsmanship}{Clean code, Test driven development }{Methodology}{SCRUM, Kanban, Lean startup}
+\vspace{1mm}
+\cvline{Coursera}{Scala, Reactive programming, Introduction to Data Science}
+\cvline{Languages}{French (native speaker), English (fluent), Spanish (beginner)}
+\cvline{Sports}{Dancing, Climbing, Skiing, Hiking, Running, Nordic skiing}
+
+\section{Talks}
+\cvline{}
+{
+\textit{Make the right product, the right way, with the right team:}
+What are the different types of feedback while creating a product. Slides:
+\href{http://www.thibautgery.com/feedback-prez}{thibautgery.com/feedback-prez} 
+}
+\cvline{}
+{
+\textit{Workshop - Introduction to Elm:}
+Small coding exercise to discover Elm key concepts.
+}
+
+\clearpage
+\section{Octo's projects}
+
+\cventry{5 months}
+{Platform Engineer}
+{Westpac}
+{Bank}
+{Sydney}
+{
+Within a team of 9, I created and maintained a platform as a service to quickly deploy API. Developed using \textbf{Docker}, Nomad, Consul, Bamboo, Python and Axway (API gateway):
+\begin{itemize}
+\item creating \textbf{python} framework for the continuous integration pipeline
+\item helping the team about code quality and \textbf{unit testing} using \textbf{pair programming} and code reviews
+\item improving the platform using \textbf{Ansible}
+\end{itemize}
+\vspace{5mm}
+}
+
+\cventry{6 months}
+{Technical leader}
+{Amadeus}
+{Airline's software vendor}
+{Sydney}
+{
+Within a team of 8, Worked on a software tracking all the flights, planes and crews. Developed using \textbf{Scala}, Play, Couchbase, Eclipse RCP, event sourcing deployed on \textbf{AWS}.
+\begin{itemize}
+\item developing new feature in Scala
+\item finding the performance issues by monitoring everything using Datadog
+\item helping other team member with testing, Scala and its functional principals
+\end{itemize}
+\vspace{5mm}
+}
+
+\cventry{1 year}
+{Developer}
+{beta.gouv.fr}
+{French government}
+{Paris}
+{
+Within a team of 3, I worked into the government internal incubator on several products and projects: mostly developed using Javascript.
+\begin{itemize}
+\item creating an API to retrieve personal information from  government's agencies using NodeJS
+\\
+\textit{Code: \url{github.com/sgmap/api-particulier}}
+\item creating \textbf{api.gouv.fr} to list the API of the french government using Jekyll
+\\
+\textit{Code: \url{github.com/sgmap/api.gouv.fr}}
+\item creating an API to exposed the drug data set of the french drug agency using NodeJS
+\\
+\textit{Code: \url{github.com/sgmap/api-medicaments}}
+\item creating verif.site to check the status of the HTTPS of the administration website using \textbf{ReactJS}
+\\
+\textit{Code: \url{github.com/sgmap/verif.site}}
+\item creating the support infrastructure of the incubator: the centralized log management system using ElasticSearch, the CI/CD pipeline using Jenkins
+\end{itemize}
+\vspace{5mm}
+}
+
+\cventry{4 months}
+{Developer}
+{Société Générale}
+{Bank}
+{Paris}
+{
+Within a teamof 5, I creating a dashboard  integrating multiple data sources. It allows the operator to visualize and economically judge and analyse a company.
+\begin{itemize}
+\item development of a web application with \textbf{NodeJS}, \textbf{EmberJS}, \textbf{MongoDB} and \textbf{Elasticsearch}.
+\item deployment in a constrained environment in production with \textbf{Ansible}.
+\end{itemize}
+\vspace{5mm}
+}
+
+\cventry{5 months}
+{Developer}
+{CNP assurance}
+{Bank}
+{Paris}
+{
+Within a team of 4, I created a pre-sale product to help salesmen to sell an insurance product
+\begin{itemize}
+\item using some of the \textbf{lean startup} principles in a big corporation
+\item developing a web application with \textbf{Java}, Spring-boot \& jQuery
+\end{itemize}
+\vspace{5mm}
+}
+
+\cventry{8 months}
+{Developer}
+{Canal + }
+{TV company}
+{Paris}
+{
+Within a program of more than 100, my 4 persons team created two services:
+\begin{itemize}
+\item a web application offering REST webservices written in \textbf{Java} with Play Framework and MongoDB
+\item a service middle ware using Mule ESB and \textbf{MongoDB}
+\end{itemize}
+I've learned the importance of code quality and I've applied clean code principles in the project and tested it with unit and functional tests
+\vspace{5mm}
+}
+
+
+
+\end{document}
