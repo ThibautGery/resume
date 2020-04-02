@@ -1,0 +1,216 @@
+\documentclass[11pt,a4paper]{moderncv}
+\moderncvtheme[blue]{classic}
+\usepackage{etoolbox}% http://ctan.org/pkg/etoolbox
+\makeatletter
+\patchcmd{\makeletterhead}% <cmd>
+  {\raggedright \@opening}% <search>
+  {\@opening}% <replace>
+  {}{}% <success><failure>
+\makeatother
+\usepackage[english]{babel}             
+\usepackage[utf8]{inputenc}
+\usepackage[bottom = 1.2cm, top = 1.2cm, left = 1.5cm, right = 1.5cm]{geometry}
+\usepackage{xcolor}
+\firstname{Thibaut}
+\familyname{Géry}
+\title{Software Engineer}          
+\address{Sydney Australia}
+\mobile{(+61) 412 766 987}                    
+\email{thibaut.gery@gmail.com}
+\social[linkedin]{thibautgery}
+\social[github]{thibautgery}
+\extrainfo{29/03/1990}
+\extrainfo{TSS Visa}
+
+
+\begin{document}
+\maketitle
+\vspace{-10mm}
+\section{Summary}
+Passionate developer for more than 7 years, I've developed and maintained critical production systems. Using quick customer feedback loop, I've been able to quickly iterate to create the right product. 
+
+I enjoy writing functional programming code following software craftsmanship principles like TDD.
+
+I look forward to join an agile team creating a product, close to its users, which owns its software from requirements to production.
+
+\section{Professional Experience}
+
+\cventry{2018 - 2020 \\(2 years)}
+{Software Engineer}
+{Snooper}
+{FMCG startup}
+{Australia}
+{
+Snooper provides brands with real time crowdsourced insights of retail in store execution: 
+The data is captured by shoppers through a mobile app and is then aggregated into dashboards.
+\\
+Within a team of 3, in close relation with the founders, we redesigned the prototype into a platform between shoppers and brands in order to scale the business.
+during my time the gross revenue grew by a factor of 4.
+\\
+I mostly worked on the admin \& user part of the platform with the product manager:
+\begin{itemize}
+\item fully created the mobile app using \textbf{React Native} and Expo
+\item incrementally rewrote the API in \textbf{Kotlin} using Spring
+\item pushed for and lead the implementation of \textbf{Clean architecture} in our backend
+\item developed the frontends using \textbf{React} and React Admin
+\item automated deployments \& infrastructure using \textbf{Terraform} on \textbf{AWS}
+\item implemented error reporting using \textbf{Sentry} and monitoring/APM using \textbf{Datadog}
+\item took part in recruiting \& mentoring the junior member of the team
+\end{itemize}
+All the code was reviewed by a peer, unit tested and the citical one e2e tested.
+}
+\vspace{2mm}
+\cventry{2013 - 2018 \\(4.5 years)}
+{Software Engineer}
+{Octo Technology}
+{Consulting firm}
+{France/Australia}
+{
+As a consultant, I've been involved in more than 10 projects for various clients. The companies range from small startups to big corporations. I had many responsibilities:
+\begin{itemize}
+\item created REST APIs using Java, \textbf{Scala} and NodeJS
+\item coded web applications using \textbf{React} and AngularJS
+\item helped juniors to grow using \textbf{pair programming} and reviews
+\item created infrastructure using code with \textbf{Ansible}, \textbf{Cloudformation} or Chef
+\item configured continuous integration and deployment pipeline using \textbf{Jenkins}, Bamboo or CircleCI
+\item created and maintained a platform as a service to deploy APIs
+\item animated agile rituals like the \textbf{retrospective}
+\end{itemize}
+The meaningful projects done while at Octo are listed on the second page.
+}
+
+\section{Education}
+\cventry{2013}
+{Master of Science in Engineering}
+{Institut Supérieur d'Électronique de Paris}{France}
+{Specialized in Software Engineering}{}
+
+\cventry{2012}
+{Exchange semester in Canada}
+{Waterloo University}{Canada}{Department of computer science}{}
+
+
+\section{Skills}
+\cvcomputer{Languages}{Kotlin, Java, NodeJS, Scala, Python}{Web}{React, React Native, Javascript}
+\cvcomputer{Database}{PostgreSQL, MongoDB, Couchbase }{Infrastructure}{AWS, Terraform, Ansible, Docker}
+\cvcomputer{Craftsmanship}{Clean code, Test driven development }{Methodology}{Kanban, SCRUM, Lean startup}
+\vspace{1mm}
+\cvline{Coursera}{Scala, Reactive programming, Introduction to Data Science}
+\cvline{Languages}{French (native speaker), English (fluent), Spanish (beginner)}
+\cvline{Sports}{Dancing, Climbing, Skiing, Hiking, Running, Nordic skiing}
+
+\clearpage
+
+\section{Talks}
+\cvline{}
+{
+\textit{Make the right product, the right way, with the right team:}
+What are the different types of feedback while creating a product. Slides:
+\href{http://www.thibautgery.com/feedback-prez}{thibautgery.com/feedback-prez} 
+}
+\cvline{}
+{
+\textit{Workshop - Introduction to Elm:}
+Small coding exercise to discover Elm key concepts.
+}
+
+\section{Octo's projects}
+
+\cventry{5 months}
+{Platform Engineer}
+{Westpac}
+{Bank}
+{Sydney}
+{
+Within a team of 9, I created and maintained an internal platform to quickly deploy API. Developed using \textbf{Docker}, Nomad, Consul, Bamboo, Python and Axway (API gateway):
+\begin{itemize}
+\item creating \textbf{python} framework for the continuous integration pipeline
+\item helping the team about code quality and \textbf{unit testing} using \textbf{pair programming} and code reviews
+\item improving the platform using \textbf{Ansible}
+\end{itemize}
+\vspace{5mm}
+}
+
+\cventry{6 months}
+{Technical leader}
+{Amadeus}
+{Airline's software vendor}
+{Sydney}
+{
+Within a team of 8, I worked on a software tracking all the flights, planes and crews of Qantas. Developed using \textbf{Scala}, Play, Couchbase, Eclipse RCP, event sourcing deployed on \textbf{AWS}.
+\begin{itemize}
+\item developing new feature in Scala
+\item finding the performance issues by monitoring performances using Datadog
+\item helping other team members with testing, Scala and its functional principals
+\end{itemize}
+\vspace{5mm}
+}
+
+\cventry{1 year}
+{Developer}
+{beta.gouv.fr}
+{French government}
+{Paris}
+{
+Within a team of 3, I worked for the government internal incubator on several products and projects, mostly developed using Javascript.
+\begin{itemize}
+\item creating an API to retrieve personal information from  government's agencies using NodeJS
+\\
+\textit{Code: \url{github.com/sgmap/api-particulier}}
+\item creating \textbf{\url{api.gouv.fr}} to list the API of the french government using Jekyll
+\\
+\textit{Code: \url{github.com/sgmap/api.gouv.fr}}
+\item creating an API to exposed the drug dataset of the french drug agency using NodeJS
+\\
+\textit{Code: \url{github.com/sgmap/api-medicaments}}
+\item creating \url{verif.site} to check the status of the HTTPS of the administration website using \textbf{ReactJS}
+\\
+\textit{Code: \url{github.com/sgmap/verif.site}}
+\item creating the support infrastructure of the incubator: the centralized log management system using ElasticSearch, the CI/CD pipeline using Jenkins
+\end{itemize}
+\vspace{5mm}
+}
+
+\cventry{4 months}
+{Developer}
+{Société Générale}
+{Bank}
+{Paris}
+{
+Within a team of 5, I created a dashboard to visualize and economically judge and analyse a company.\\
+It integrated multiple internal datasources as well as external ones like twitter.
+\begin{itemize}
+\item development of a web application with \textbf{NodeJS}, \textbf{EmberJS}, \textbf{MongoDB} and \textbf{Elasticsearch}.
+\item deployment in a constrained environment in production with \textbf{Ansible}.
+\end{itemize}
+\vspace{5mm}
+}
+
+\cventry{5 months}
+{Developer}
+{CNP assurance}
+{Bank}
+{Paris}
+{
+Within a team of 4, I created a pre-sale product to help salesmen to sell an insurance product
+\begin{itemize}
+\item using some of the \textbf{lean startup} principles in a big corporation
+\item developing a web application with \textbf{Java}, Spring-boot \& jQuery
+\end{itemize}
+\vspace{5mm}
+}
+
+\cventry{8 months}
+{Developer}
+{Canal + }
+{TV company}
+{Paris}
+{
+Within a program of more than 100, my 4 person team created two services:
+\begin{itemize}
+\item a web application offering REST webservices written in \textbf{Java} with Play Framework and MongoDB
+\item a service middleware using Mule ESB and \textbf{MongoDB}
+\end{itemize}
+}
+
+\end{document}
